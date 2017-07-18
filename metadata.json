@@ -1,0 +1,39 @@
+{
+  "name": "silug-run1",
+  "version": "0.0.1",
+  "author": "Steven Pritchard",
+  "summary": "Installs run1 from copr",
+  "license": "Apache-2.0",
+  "source": "https://github.com/silug/puppet-run1.git",
+  "project_page": "https://github.com/silug/puppet-run1",
+  "issues_url": "https://github.com/silug/puppet-run1/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 4.13.0 < 5.0.0"}
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Fedora",
+      "operatingsystemrelease": [
+        "24",
+        "25",
+        "26"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    }
+  ],
+  "tags": []
+}
+
