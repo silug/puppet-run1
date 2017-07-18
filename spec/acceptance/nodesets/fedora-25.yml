@@ -1,0 +1,11 @@
+HOSTS:
+  fedora-25-x64:
+    platform: fedora-25-x86_64
+    image: fedora:25
+    hypervisor: docker
+    docker_preserve_image: true
+    docker_cmd: '["/sbin/init"]'
+    docker_image_commands:
+      - 'dnf -y install bind-utils initscripts net-tools && dnf clean all'
+CONFIG:
+  type: foss
