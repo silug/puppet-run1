@@ -1,0 +1,2 @@
+---
+run1::baseurl: "https://copr-be.cloud.fedoraproject.org/results/steve/run1/fedora-%{facts.os.release.major}-$basearch/"

@@ -1,6 +1,5 @@
+---
 fixtures:
-  repositories:
-    stdlib:
-      repo: git://github.com/puppetlabs/puppetlabs-stdlib.git
-  symlinks:
-    run1: "#{source_dir}"
+  forge_modules:
+    stdlib: puppetlabs-stdlib
+    yumrepo_core: puppetlabs-yumrepo_core

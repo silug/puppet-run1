@@ -13,17 +13,9 @@
 #
 # Copyright 2017 Steven Pritchard
 #
-class run1 {
-  case $::operatingsystem {
-    'centos', 'redhat': {
-      $url="https://copr-be.cloud.fedoraproject.org/results/steve/run1/epel-${::operatingsystemmajrelease}-\$basearch/"
-    }
-    'fedora': {
-      $url="https://copr-be.cloud.fedoraproject.org/results/steve/run1/fedora-${::operatingsystemmajrelease}-\$basearch/"
-    }
-    default: { fail("Unsupported OS ${::operatingsystem}") }
-  }
-
+class run1 (
+  String[1] $baseurl,
+) {
   yumrepo { 'steve-run1':
     ensure              => present,
     descr               => 'Copr repo for run1 owned by steve',
@@ -32,7 +24,7 @@ class run1 {
     gpgcheck            => '1',
     repo_gpgcheck       => '0',
     gpgkey              => 'https://copr-be.cloud.fedoraproject.org/results/steve/run1/pubkey.gpg',
-    baseurl             => $url,
+    baseurl             => $baseurl,
     target              => '/etc/yum.repos.d/steve-run1.repo',
   } -> package { 'run1':
     ensure => installed,

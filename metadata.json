@@ -1,6 +1,6 @@
 {
   "name": "silug-run1",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Steven Pritchard",
   "summary": "Installs run1 from copr",
   "license": "Apache-2.0",
@@ -10,23 +10,22 @@
   "dependencies": [
     {
       "name": "puppetlabs-stdlib",
-      "version_requirement": ">= 4.13.0 < 5.0.0"
+      "version_requirement": ">= 4.13.0 < 6.0.0"
     }
   ],
   "operatingsystem_support": [
     {
       "operatingsystem": "Fedora",
       "operatingsystemrelease": [
-        "24",
-        "25",
-        "26"
+        "30"
       ]
     },
     {
       "operatingsystem": "RedHat",
       "operatingsystemrelease": [
         "6",
-        "7"
+        "7",
+        "8"
       ]
     },
     {
@@ -46,7 +45,7 @@
   "tags": [
 
   ],
-  "pdk-version": "1.4.1",
-  "template-url": "file:///opt/puppetlabs/pdk/share/cache/pdk-templates.git",
-  "template-ref": "1.4.1-0-g52adbbb"
+  "pdk-version": "1.12.0",
+  "template-url": "pdk-default#1.12.0",
+  "template-ref": "1.12.0-0-g55d9ae2"
 }
