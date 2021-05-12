@@ -1,18 +1,8 @@
-# Class: run1
-# ==============
+# @summary This module installs run1 from copr
 #
-# This module installs run1 from copr.
+# @param baseurl Location of the run1 repo
 #
-# Authors
-# -------
-#
-# Steven Pritchard <steven.pritchard@gmail.com>
-#
-# Copyright
-# ---------
-#
-# Copyright 2017 Steven Pritchard
-#
+# @author Steven Pritchard <steven.pritchard@gmail.com>
 class run1 (
   String[1] $baseurl,
 ) {

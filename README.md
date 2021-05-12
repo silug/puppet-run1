@@ -2,13 +2,15 @@
 
 #### Table of Contents
 
-1. [Overview](#overview)
-2. [Setup](#setup)
-    * [What run1 affects](#what-run1-affects)
-    * [Setup requirements](#setup-requirements)
-3. [Usage](#usage)
-5. [OS compatibility](#os-compatibility)
-6. [Running tests](#running-tests)
+- [run1](#run1)
+      - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Setup](#setup)
+    - [What run1 affects](#what-run1-affects)
+    - [Setup Requirements](#setup-requirements)
+  - [Usage](#usage)
+  - [OS Compatibility](#os-compatibility)
+  - [Running tests](#running-tests)
 
 ## Overview
 
@@ -28,7 +30,7 @@ This module requires [puppetlabs-stdlib](https://forge.puppet.com/puppetlabs/std
 ## Usage
 
 ``` puppet
-class { 'run1': }
+include run1
 ```
 
 ## OS Compatibility
