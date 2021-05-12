@@ -5,7 +5,6 @@ HOSTS:
     hypervisor: docker
     docker_preserve_image: true
     docker_cmd: '["/sbin/init"]'
-    docker_image_commands:
-      - 'dnf -y install bind-utils initscripts net-tools && dnf clean all'
 CONFIG:
-  type: foss
+  type: aio
+  puppet_collection: <%= ENV['BEAKER_PUPPET_COLLECTION'] || 'puppet7' %>

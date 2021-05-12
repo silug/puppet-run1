@@ -6,4 +6,5 @@ HOSTS:
     docker_preserve_image: true
     docker_cmd: '["/sbin/init"]'
 CONFIG:
-  type: foss
+  type: aio
+  puppet_collection: <%= ENV['BEAKER_PUPPET_COLLECTION'] || 'puppet7' %>
