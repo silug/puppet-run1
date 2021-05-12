@@ -1,0 +1,9 @@
+HOSTS:
+  centos-8-x64:
+    platform: el-8-x86_64
+    image: centos:8
+    hypervisor: docker
+    docker_preserve_image: true
+    docker_cmd: '["/sbin/init"]'
+CONFIG:
+  type: foss

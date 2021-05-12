@@ -1,7 +1,7 @@
 HOSTS:
-  fedora-24-x64:
-    platform: fedora-24-x86_64
-    image: fedora:24
+  fedora-33-x64:
+    platform: fedora-33-x86_64
+    image: fedora:33
     hypervisor: docker
     docker_preserve_image: true
     docker_cmd: '["/sbin/init"]'
