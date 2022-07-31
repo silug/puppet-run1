@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'run1' do
@@ -7,6 +9,7 @@ describe 'run1' do
 
       it { is_expected.to compile }
       it { is_expected.to contain_class('run1') }
+      it { is_expected.to contain_yumrepo('steve-run1').with_ensure('present') }
       it { is_expected.to contain_package('run1').with_ensure('installed') }
     end
   end

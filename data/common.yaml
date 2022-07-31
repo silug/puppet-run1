@@ -1,2 +1,13 @@
 ---
 run1::baseurl: "https://download.copr.fedorainfracloud.org/results/steve/run1/epel-%{facts.os.release.major}-$basearch/"
+run1::yumrepo_ensure: 'present'
+run1::yumrepo_description: 'Copr repo for run1 owned by steve'
+run1::yumrepo_enabled: '1'
+run1::yumrepo_skip_if_unavailable: '1'
+run1::yumrepo_gpgcheck: '1'
+run1::yumrepo_repo_gpgcheck: '0'
+run1::yumrepo_gpgkey: 'https://copr-be.cloud.fedoraproject.org/results/steve/run1/pubkey.gpg'
+run1::yumrepo_target: '/etc/yum.repos.d/steve-run1.repo'
+run1::yumrepo_options: {}
+run1::package_name: 'run1'
+run1::package_ensure: 'installed'

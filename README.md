@@ -1,9 +1,6 @@
 # run1
 
-#### Table of Contents
-
 - [run1](#run1)
-      - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Setup](#setup)
     - [What run1 affects](#what-run1-affects)
@@ -14,18 +11,18 @@
 
 ## Overview
 
-This module installs run1 from copr.
+This module installs [run1](https://github.com/silug/run1) from [Copr](https://copr.fedorainfracloud.org/coprs/steve/run1/).
 
 ## Setup
 
 ### What run1 affects
 
-* The run1 package
-* A repo file in /etc/yum.repos.d
+* The `run1` package
+* A repo file in `/etc/yum.repos.d`
 
 ### Setup Requirements
 
-This module requires [puppetlabs-stdlib](https://forge.puppet.com/puppetlabs/stdlib).
+This module requires [puppetlabs-stdlib](https://forge.puppet.com/puppetlabs/stdlib) and [puppetlabs-yumrepo_core](https://forge.puppet.com/puppetlabs/yumrepo_core).
 
 ## Usage
 
@@ -53,10 +50,10 @@ bundle exec rake beaker
 ```
 
 By default, beaker tests will execute against CentOS 7.  To run beaker tests
-against Fedora 26, execute the following:
+against Fedora 36, execute the following:
 
 ```
-bundle exec rake beaker:fedora-26
+bundle exec rake beaker:fedora-36
 ```
 
 Run `bundle exec rake beaker:sets` to see all available beaker nodesets.

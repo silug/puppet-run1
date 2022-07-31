@@ -19,10 +19,109 @@ This module installs run1 from copr
 The following parameters are available in the `run1` class:
 
 * [`baseurl`](#baseurl)
+* [`yumrepo_ensure`](#yumrepo_ensure)
+* [`yumrepo_description`](#yumrepo_description)
+* [`yumrepo_enabled`](#yumrepo_enabled)
+* [`yumrepo_skip_if_unavailable`](#yumrepo_skip_if_unavailable)
+* [`yumrepo_gpgcheck`](#yumrepo_gpgcheck)
+* [`yumrepo_repo_gpgcheck`](#yumrepo_repo_gpgcheck)
+* [`yumrepo_gpgkey`](#yumrepo_gpgkey)
+* [`yumrepo_target`](#yumrepo_target)
+* [`yumrepo_options`](#yumrepo_options)
+* [`package_name`](#package_name)
+* [`package_ensure`](#package_ensure)
 
 ##### <a name="baseurl"></a>`baseurl`
 
 Data type: `String[1]`
 
 Location of the run1 repo
+
+##### <a name="yumrepo_ensure"></a>`yumrepo_ensure`
+
+Data type: `Enum[
+    'present',
+    'absent'
+  ]`
+
+`ensure` value for the yum repo
+
+##### <a name="yumrepo_description"></a>`yumrepo_description`
+
+Data type: `String`
+
+Yum repo `description` configuration option
+
+##### <a name="yumrepo_enabled"></a>`yumrepo_enabled`
+
+Data type: `Variant[
+    String,
+    Integer,
+    Boolean
+  ]`
+
+Yum repo `enabled` configuration option
+
+##### <a name="yumrepo_skip_if_unavailable"></a>`yumrepo_skip_if_unavailable`
+
+Data type: `Variant[
+    String,
+    Integer,
+    Boolean
+  ]`
+
+Yum repo `skip_if_unavailable` configuration option
+
+##### <a name="yumrepo_gpgcheck"></a>`yumrepo_gpgcheck`
+
+Data type: `Variant[
+    String,
+    Integer,
+    Boolean
+  ]`
+
+Yum repo `gpgcheck` configuration option
+
+##### <a name="yumrepo_repo_gpgcheck"></a>`yumrepo_repo_gpgcheck`
+
+Data type: `Variant[
+    String,
+    Integer,
+    Boolean
+  ]`
+
+Yum repo `repo_gpgcheck` configuration option Yum repo `repo_gpgcheck` configuration option
+
+##### <a name="yumrepo_gpgkey"></a>`yumrepo_gpgkey`
+
+Data type: `String`
+
+GPG key to use for this repo Yum repo `gpgkey` configuration option
+
+##### <a name="yumrepo_target"></a>`yumrepo_target`
+
+Data type: `Stdlib::Unixpath`
+
+Target file for the yum repo configuration
+
+##### <a name="yumrepo_options"></a>`yumrepo_options`
+
+Data type: `Hash`
+
+Additional yum repo configuration options
+
+##### <a name="package_name"></a>`package_name`
+
+Data type: `Variant[
+    String[1],
+    Array[String[1]]
+  ]`
+
+The name of the `run1` package
+
+##### <a name="package_ensure"></a>`package_ensure`
+
+Data type: `String[1]`
+
+Package [`ensure` attribute](https://puppet.com/docs/puppet/latest/types/package.html#package-attribute-ensure)
 
