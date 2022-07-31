@@ -1,3 +1,4 @@
+---
 HOSTS:
   fedora-34-x64:
     platform: fedora-34-x86_64
@@ -7,4 +8,4 @@ HOSTS:
     docker_cmd: '["/sbin/init"]'
 CONFIG:
   type: aio
-  puppet_collection: <%= ENV['BEAKER_PUPPET_COLLECTION'] || 'puppet7' %>
+  puppet_collection: <%= ENV.fetch('BEAKER_PUPPET_COLLECTION', 'puppet7') %>
