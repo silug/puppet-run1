@@ -1,10 +1,10 @@
 ---
 HOSTS:
-  almalinux-9-x64:
-    platform: el-9-x86_64
-    image: almalinux:9
+  fedora-40-x64:
+    platform: fedora-40-x86_64
+    image: fedora:40
     hypervisor: <%= ENV.fetch('BEAKER_HYPERVISOR', 'vagrant') %>
-    box: almalinux/9
+    box: fedora/40-cloud-base
     docker_preserve_image: true
     docker_cmd: '["/sbin/init"]'
 CONFIG:
