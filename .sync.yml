@@ -7,3 +7,16 @@ Gemfile:
       - gem: beaker-puppet_install_helper
       - gem: beaker-module_install_helper
       - gem: beaker-docker
+      - gem: beaker-vagrant
+      - gem: vagrant-wrapper
+      - gem: net-ssh
+      - gem: ed25519
+      - gem: x25519
+      - gem: bcrypt_pbkdf
+.pdkignore:
+  paths:
+    - /.github/
+    - /.ruby-lsp/
+    - /.gitlab-ci.yml
+    - /.rubocop.yml
+    - /.yamllint
